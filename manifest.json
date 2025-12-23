@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "ルビ表示切り替え",
+  "version": "0.1",
+  "description": "churchofjesuschrist.org の聖典ページのルビ表示を切り替えます。",
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.churchofjesuschrist.org/study/scriptures/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon.svg",
+      "48": "images/icon.svg",
+      "128": "images/icon.svg"
+    }
+  },
+  "icons": {
+    "16": "images/icon.svg",
+    "48": "images/icon.svg",
+    "128": "images/icon.svg"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.churchofjesuschrist.org/study/scriptures/*"],
+      "js": ["content.js"],
+      "css": ["ruby_off.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["ruby_off.css"],
+      "matches": ["https://www.churchofjesuschrist.org/*"]
+    }
+  ]
+}
