@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "ルビ表示切り替え",
-  "version": "0.1",
+  "version": "0.2",
   "description": "churchofjesuschrist.org の聖典ページのルビ表示を切り替えます。",
   "permissions": [
     "storage",
