@@ -1,13 +1,13 @@
 {
   "manifest_version": 3,
   "name": "ルビ表示切り替え",
-  "version": "0.4",
+  "version": "0.5",
   "description": "churchofjesuschrist.org の聖典ページのルビ表示を切り替えます。",
   "permissions": [
     "storage"
   ],
   "host_permissions": [
-    "https://www.churchofjesuschrist.org/study/scriptures/*"
+    "https://www.churchofjesuschrist.org/*"
   ],
   "action": {
     "default_icon": {
@@ -23,10 +23,14 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.churchofjesuschrist.org/study/scriptures/*"],
-      "js": ["content.js"],
+      "matches": ["https://www.churchofjesuschrist.org/*"],
       "css": ["ruby_off.css"],
       "run_at": "document_start"
+    },
+    {
+      "matches": ["https://www.churchofjesuschrist.org/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
     }
   ],
   "web_accessible_resources": [
