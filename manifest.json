@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "ルビ表示切り替え",
-  "version": "0.5",
-  "description": "churchofjesuschrist.org の聖典ページのルビ表示を切り替えます。",
+  "name": "聖典ふりがな表示切り替え",
+  "version": "0.6",
+  "description": "末日聖徒イエス・キリスト教会ライブラリの聖典ページのルビ表示を切り替えます。",
   "permissions": [
     "storage"
   ],
@@ -11,15 +11,17 @@
   ],
   "action": {
     "default_icon": {
-      "16": "images/icon.svg",
-      "48": "images/icon.svg",
-      "128": "images/icon.svg"
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
     }
   },
   "icons": {
-    "16": "images/icon.svg",
-    "48": "images/icon.svg",
-    "128": "images/icon.svg"
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
   },
   "content_scripts": [
     {
