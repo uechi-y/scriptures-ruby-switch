@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "聖典ふりがな表示切り替え",
-  "version": "0.6",
-  "description": "末日聖徒イエス・キリスト教会ライブラリの聖典ページのルビ表示を切り替えます。",
+  "version": "1.0.0",
+  "description": "末日聖徒イエス・キリスト教会ライブラリの聖典ページでふりがな表示を切り替えられるようにします。",
   "permissions": [
     "storage"
   ],
